@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MbeguChoice</title>
+<link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+<link rel="stylesheet" href="static/css/style.css">
+<link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+</head>
+<style type="text/css">
+.btnresults button, .lang-link button {
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #e8dbd9;
+    background-color: #90909075;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: 3px solid #ef7c05;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.orangeoverlay {
+    min-height: 400px;
+    float: left;
+    width: 100%;
+    background-color: #d40c0cbd;
+}
+.questionsbg{
+    min-height: 400px;
+    background-attachment: fixed;
+    background-image: url(static/rajma.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+header{
+   
+    background-image: url(static/BlackEyedPeas.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.headerlg {
+    background: #e8dcdce6;
+    text-align: center;
+}
+.modal-header {
+    color: black;
+    display: block;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    border-bottom: 1px solid #e9ecef;
+    border-top-left-radius: .3rem;
+    border-top-right-radius: .3rem;
+}
+.modal-dialog{
+    color: grey;
+}
+span.maturityitemname {
+    font-size: 13px;
+    color: green;
+}
+.specialcharitem {
+    font-size: 12px;
+    padding: 10px;
+}
+img.wh {
+    height: 180px;
+}
+.selectqn {
+    background: white;
+    border-radius: 10px;
+    width: 103%;
+    height: 45px;
+    border: none;
+    font-size: 18px;
+    color: #8e8e8e;
+    padding: 0 2%;
+    margin: 20px 0 0;
+}
+.question {
+    text-align: center;
+    font-size: 18px;
+}
+.filteritemoptions {
+    color: black;
+    margin-top: 10px;
+    background: #ffffff;
+    padding: 11px;
+    width: 103%;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+.filteritemcontainer {
+    float: left;
+    width: 100%;
+    padding: 10px 0%;
+    
+}
+.txtqn {
+    width: 89%;
+}
+button#btn_get_results {
+    border: none;
+    margin: -15px;
+    font-size: 18px;
+    color: white;
+    background: #2f9144;
+    padding: 10px;
+    
+}
+#crop {
+    display:none;
+}
+@media (max-width: 622px){
+
+.txtqn {
+    width: 81%;
+
+    
+
+
+}
+}
+a.btn.btn-info.btn-lg {
+    padding: 6px;
+    margin-top: 10px;
+    FLOAT: RIGHT;
+    margin-right: 20px;
+    font-size: 12px;
+}
+
+</style>
+<body>
+<header>
+    <div class="headerlg">
+        
+    	<a href="">
+            <img class="wh" src="static/images/logo.png"  alt="MbeguChoice" border="0" />
+        </a>
+        <a href="/logout" class="btn btn-info btn-lg">
+          <span class="glyphicon glyphicon-log-out"></span> Log out
+        </a>
+    </div>
+
+</header>
+<div class="questionscontainer">
+<div class="row">
+<div class="col-md-12">
+    <div class="questionsbg">
+        <div class="orangeoverlay">
+            <div class="questionstext">
+               
+                    <div class="question">Search Farm Location
+                    </div>
+                    <h4 id="error" style="color:black"></h3>
+                    <div class="fl">
+                    <span>
+                    <input type="text" name="country" id='county' value="" class="txtqn" placeholder="Start typing farm location" >
+                    
+                    <button type="submit" id="btn_get_results" onclick='searchItem()'>Search</button>
+                    </span>
+                    </div>
+                
+                <form action="/crop" method="GET" id="crop"  >
+                    <div class="question">Crop
+                    </div>
+                    <select class="selectqn" name="crop" required>
+                        <option value="">Select Crop</option>
+                        <option value="Maize">Maize</option>
+                        <option value="Beans">Beans</option>
+                        <option value="Peas">Peas</option>
+                        <option value="Common Bean">Common Bean</option>
+                        <option value='Pigeon pea'>Pigeon pea</option>
+                        <option value='Cowpea'>Cowpea</option>
+                    </select>
+                    <!--<input type="text" name="county" value="" class="txtqn" placeholder="Start typing your county name">-->
+                    <div class="question">Crop Maturity Selection
+                    </div>
+                    <select class="selectqn" name="maturity" required>
+                        <option value="">Select ecological zone using the drop down</option>
+                        <option value="Early">Early</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Late">Late</option>
+                    </select> 
+                    <div class="filteritemcontainer" style="border-bottom:none;">
+                       <div class="question">DroughtTolerance
+                       </div> 
+                       <div class="filteritemoptions">
+                           <input type="radio" name="droughtTolerance" class="sw_seasons" value="Yes" required>
+                            <span class="filteroption">YES</span>
+                            <input type="radio" name="droughtTolerance" class="sw_seasons" style="margin-left: 20px;" value="No" required>
+                            <span class="filteroption">NO</span>
+                        </div>
+                    </div>
+                    <div class="btnresults">
+                        <button type="submit" id="btn_get_results">Search Crop</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
+<div class="copyright"><p>©2019 MbeguChoice. All Rights Reserved. </p></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+function searchItem(){
+    
+    var searchItem=document.getElementById("county").value
+    if (searchItem==""){
+      document.getElementById("error").innerHTML="Enter location First"
+    }
+    else{
+        $.ajax({
+            url: 'country', //server url
+            type: 'POST',    //passing data as post method
+            dataType: 'json', // returning data as json
+            data: {country:searchItem},  //form values
+            success:function(response)
+            {
+            
+                  //response from the server given as alert message
+                
+                if (response=="found"){
+                    
+                    document.getElementById("crop").style.display = "block";
+                    document.getElementById("error").style.display="none"
+
+                }
+                else{
+                    
+                    document.getElementById("crop").style.display = "none";
+                    document.getElementById("error").innerHTML="Please Search Location In Kenya Only"
+                }
+                
+            },
+            error:function(response){
+               console.log(response)
+            }
+            });
+    }
+    
+}
+</script>
+</body>
+</html>

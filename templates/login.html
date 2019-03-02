@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MbeguChoice</title>
+<link rel="stylesheet" href="static/css/style.css">
+<link rel="stylesheet" href="static/css/login.css">
+<style>
+.nm{
+    background-image: url(static/Painted_Pony_Bean.jpeg);
+}
+
+</style>
+</head>
+
+<body>
+	<div class="nm">
+        <div class="box animation flipInX font_size">
+            <div class="box1">
+                    <div class="text-center">
+                        <img src="static/images/logo.png" alt="logo" class="img-fluid mar">
+                    </div>
+                      
+                        <form class="omb_loginForm" autocomplete="off" method="POST" action='/login'>
+                            
+                            <div class="form-group ">
+                            <h4 style='color:red'> {{error}}</h4>
+                                <input type="email" class="form-control" name="email" placeholder="Email address" >
+                            </div>
+                            
+                            <div class="form-group ">
+                                <input type="password" class="form-control" name="password" placeholder="Password">
+                            </div>
+                            <!-- <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Remember me
+                                </label>
+
+                            </div>-->
+                           
+                            <div style="margin-top: 20px;">
+                                <input type="submit" class="btnbt" value="Sign In">
+                            </div>
+                            <p class="p-1">
+                            Don't have an account? <a href="/registration"><strong> Sign Up</strong></a></p>
+                        </form>
+            
+                <div class="bg-light animation flipInX">
+             <a href="/forget_password" id="forgot_pwd_title">Forgot Password?</a>
+         </div>
+     </div>
+ </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,6 @@
+Flask
+jsonify
+requests
+PyMySQL
+geocoder
+Flask-Mail

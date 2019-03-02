@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MbeguChoice</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/varietydetails.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+</head>
+<style type="text/css">
+.blueoverlay{
+    background-image: url("static/Painted_Pony_Bean.jpeg");
+}
+header{
+    background-image: url(static/BlackEyedPeas.jpeg);
+}
+</style>
+
+<body>
+    <header>
+    <div class="headerlg">
+        
+    	<a href="">
+            <img class="wh" src="static/images/logo.png"  alt="MbeguChoice" border="0" />
+        </a>
+    
+        <a href="/country" class="btn btn-info btn-lg">
+          <span class="glyphicon glyphicon-log-out"></span> Home
+        </a>
+      
+        
+    </div>
+
+</header>
+<div class="attachment1">
+    <div class="blueoverlay">
+        <div class="resultstext">
+                    <div class="showingresultstxt">
+                             Showing results for
+                        
+
+                            <span class="boldtext capstext">{{ crop.crop }} in {{county}} - CANYA</span>
+                            <input type="hidden" name="selected_county" id="selected_county" value="MURANGA">
+                            <input type="hidden" name="selected_altitude_region" id="selected_altitude_region" value="mid_altitude">
+                            <input type="hidden" name="selected_crop" id="selected_crop" value="17">
+                        </div>
+                <div id="loading" style="display: none;">
+                    <img src="http://www.mbeguchoice.com/addons/default/modules/mbegu_choice/img/bigLoader.gif">
+                </div>
+                <div class="resultitemwrapper">
+                          <table class="resultitemcontainer" cellpadding="0" cellspacing="0">
+                        <tbody>
+                         <tr class="fill">
+                             <td colspan="2" class="hf">
+                        
+                                    <p>Seed Variety Selected</p>
+                                    <td>
+                            <tr>  
+                        
+
+                            <tr class="resultitemdiv">
+                            <!-- <th>Seed Variety Selected</th> -->
+                           
+                                <td class="resultitemlabel">
+                                
+                                    <p>Crop :</p>
+                                </td>
+                                <td class="resultitemdesc">
+                                    <p>{{ crop.crop }}</p>
+                                </td>
+                            </tr>
+                            <tr class="resultitemdiv">
+                                <td class="resultitemlabel">
+                                    <p>Variety Name:</p>
+                                </td>
+                                <td class="resultitemdesc">
+                                    <p>{{ crop.variety_name }}</p>
+                                </td>
+                            </tr>
+                            <tr class="resultitemdiv">
+                                <td class="resultitemlabel">
+                                    <p>Average Yield:</p>
+                                </td>
+                                <td class="resultitemdesc">
+                                    <p>{{ crop.average_yield }}</p>
+                                </td>
+                            </tr>
+                            <tr class="resultitemdiv">
+                                <td class="resultitemlabel">
+                                    <p>Special Attributes:</p>
+                                </td>
+                                <td class="resultitemdesc">
+                                    <p>{{ crop.special_attributes }} </p>
+                                </td>
+                            </tr>
+                           
+                            <tr class="resultitemdiv">
+                                <td class="resultitemlabel">
+                                    <p>licence :</p>
+                                </td>
+                                <td class="resultitemdesc">
+                                    <p> {{ crop.licensee }} </p>
+                                </td>
+                            </tr>
+                            <tr class="fill">
+                             <td colspan="2" class="hf">
+                        
+                                    <p>Crop Soil Requirements</p>
+                                    <td>
+                            <tr>  
+                          <!-- <th>Crop Soil Requirements</th> -->
+                            <tr class="resultitemdiv">
+                                <td class="resultitemlabel">
+                                    <p>Organic Carbon :</p>
+                                </td>
+                                <td class="resultitemdesc">
+                                    <p>{{ crop.oc }} </p>
+                                </td>
+                            </tr>
+                           
+                            <tr class="resultitemdiv">
+                                <td class="resultitemlabel">
+                                    <p>Soil PH:</p>
+                                </td>
+                                <td class="resultitemdesc">
+                                    <p>{{ crop.ph }}</p>
+                                </td>
+                            </tr>
+                            <tr class="fill">
+                             <td colspan="2" class="hf">
+                                    <p>Site Specific Recommendations</p>
+                                    <td>
+                            <tr>  
+                           <!-- <th>Site Specific Recommendations</th> -->
+                              <tr class="resultitemdiv">
+                                <td class="resultitemlabel">
+                                    <p>Organic Carbon: :</p>
+                                </td>
+                                <td class="resultitemdesc">
+                                    <p>{{ crop.oc_recom}} </p>
+                                </td>
+                            </tr>
+                            <tr class="resultitemdiv">
+                                <td class="resultitemlabel">
+                                    <p>Soil PH:</p>
+                                </td>
+                                <td class="resultitemdesc">
+                                    <p>{{ crop.ph_recom }}</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+          
+    </div>
+ </div>
+</div>
+   
+
+      
+<div class="copyright"><p>©2019 MbeguChoice. All Rights Reserved. </p></div>
+
+
+
+
+</body>
+
+</html>

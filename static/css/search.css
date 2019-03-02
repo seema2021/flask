@@ -1,0 +1,125 @@
+.btnresults button, .lang-link button {
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #e8dbd9;
+    background-color: #90909075;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: 3px solid #ef7c05;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.orangeoverlay {
+    min-height: 400px;
+    float: left;
+    width: 100%;
+    background-color: #d40c0cbd;
+}
+.questionsbg{
+    min-height: 400px;
+    background-attachment: fixed;
+    background-image: url(static/rajma.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+header{
+   
+    background-image: url(static/BlackEyedPeas.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.headerlg {
+    background: #e8dcdce6;
+    text-align: center;
+}
+.modal-header {
+    color: black;
+    display: block;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    border-bottom: 1px solid #e9ecef;
+    border-top-left-radius: .3rem;
+    border-top-right-radius: .3rem;
+}
+.modal-dialog{
+    color: grey;
+}
+span.maturityitemname {
+    font-size: 13px;
+    color: green;
+}
+.specialcharitem {
+    font-size: 12px;
+    padding: 10px;
+}
+img.wh {
+    height: 180px;
+}
+.selectqn {
+    background: white;
+    border-radius: 10px;
+    width: 103%;
+    height: 45px;
+    border: none;
+    font-size: 18px;
+    color: #8e8e8e;
+    padding: 0 2%;
+    margin: 20px 0 0;
+}
+.question {
+    text-align: center;
+    font-size: 18px;
+}
+.filteritemoptions {
+    color: black;
+    margin-top: 10px;
+    background: #ffffff;
+    padding: 11px;
+    width: 103%;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+.filteritemcontainer {
+    float: left;
+    width: 100%;
+    padding: 10px 0%;
+    
+}
+.txtqn {
+    width: 89%;
+}
+button#btn_get_results {
+    border: none;
+    margin: -15px;
+    font-size: 18px;
+    color: white;
+    background: #2f9144;
+    padding: 10px;
+    
+}
+#crop {
+    display:none;
+}
+@media (max-width: 622px){
+
+.txtqn {
+    width: 81%;
+
+    
+
+
+}
+}
+a.btn.btn-info.btn-lg {
+    padding: 6px;
+    margin-top: 10px;
+    FLOAT: RIGHT;
+    margin-right: 20px;
+    font-size: 12px;
+}

@@ -1,0 +1,169 @@
+
+.resultitemwrapper2{
+    background-image: url("static/Painted_Pony_Bean.jpeg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: list-item;
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+            width: -webkit-fill-available;
+
+}
+.headerlg {
+    background: #e8dcdce6;
+    text-align: center;
+}
+    header{
+    background-image: url(static/BlackEyedPeas.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+    
+    .filteroptionstitle {
+        color: #5b865f;
+        float: left;
+        width: 100%;
+        padding: 20px 2%;
+        background-color: #e6872b;
+        font-family: 'pt_sansbold', Arial, Helvetica, sans-serif;
+        font-size: 28px;
+        text-transform: uppercase;
+    }
+    
+    header {
+        background-color: #f1d6bc;
+    }
+    
+    /*.blueoverlay {
+        float: left;
+        width: 100%;
+        background-color: #3b9143;
+    }*/
+    
+    .filteroptionsbox {
+        float: left;
+        width: 90%;
+        margin: 0 5% 20px;
+        background-color: #794a1c;
+    }
+    
+    .modal-header {
+        color: black;
+        display: block;
+        justify-content: space-between;
+        padding: 1rem 1rem;
+        border-bottom: 1px solid #e9ecef;
+        border-top-left-radius: .3rem;
+        border-top-right-radius: .3rem;
+    }
+    
+   .resultitemlabel {
+    text-align: left;
+    font-size: 15px;
+    line-height: 22px;
+    background-color: #0f29067a;
+    width: 51%;
+    padding: 6px 7px;
+    border-bottom: 1px solid #ecce60f0;
+    border-right: 1px solid #e1c65c;
+}
+.resultitemdesc {
+    background: #1b1417;
+    
+    width: 49%;
+    border-bottom: 1px solid #e0c65c;
+}
+.resultitemcontainer {
+   
+    border-top: 1px solid #fafbfb;
+    border-left: 1px solid #fafbfb;
+    border-right: 1px solid #fafbfb;
+}
+.resultstext {
+    min-height: 400px;
+    background: #020000a8;
+    float: left;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'pt_sansregular', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 33px;
+    color: #fff;
+    padding: 20px 5% 30px;
+    text-align: center;
+}
+    .another {
+    background: #3b9143e3;
+    float: left;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'pt_sansregular', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 33px;
+    color: #fff;
+    padding: 20px 5% 30px;
+    text-align: center;
+}
+    
+    .modal-dialog {
+        color: grey;
+    }
+    
+    span.maturityitemname {
+        font-size: 13px;
+        color: green;
+    }
+    
+    .specialcharitem {
+        font-size: 12px;
+        padding: 10px;
+    }
+    
+    .resultsnavcontainer {
+        display: flex;
+        justify-content: space-around;
+    }
+    span.filteroption {
+    padding: 6px;
+    font-size: 14px;
+    color: white;
+    margin-right: 44px;
+}
+span.boldtext {
+    font-size: 14px;
+    color: white;
+}
+a.open-popup-link {
+    color: white;
+}
+.blueoverlay{
+            background-image: url("static/Painted_Pony_Bean.jpeg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: list-item;
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+            width: -webkit-fill-available;
+
+}
+a#download-more {
+    color: #e6872b;
+}
+a.btn.btn-info.btn-lg {
+    padding: 6px;
+    margin-top: 10px;
+    FLOAT: RIGHT;
+    margin-right: 20px;
+    font-size: 12px;
+}
+tr.fill {
+    background: #371513c4;
+}
+p {
+    margin: 0px;
+    padding: 5px;
+}

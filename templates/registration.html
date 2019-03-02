@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MbeguChoice</title>
+<link rel="stylesheet" href="static/css/style.css">
+<link rel="stylesheet" href="static/css/registration.css">
+
+</head>
+
+
+<style type="text/css">
+.nm{
+    background-image: url(static/Painted_Pony_Bean.jpeg);
+}
+
+</style>
+<body>
+	<div class="nm">
+        <div class="box animation flipInX font_size">
+            <div class="box1">
+                <div class="text-center">
+                    <img src="static/images/logo.png" alt="logo" class="img-fluid mar"></div>
+                        <form class="omb_loginForm" autocomplete="off" method="POST" action='/registration'>
+                            <div class="form-group ">
+                                <input type="Name" class="form-control" name="Name" placeholder="Name" >
+                            </div>
+                            <div class="form-group ">
+                                <input type="email" class="form-control" name="email" placeholder="Email-Address" >
+                            </div>
+                            <div class="form-group ">
+                                <input type="number" class="form-control" name="Phone-number" placeholder="Phone number" >
+                            </div>
+                            <div class="form-group ">
+                                <select class="form-control" name="Country" placeholder="Last Name">
+                                  <option value="volvo">Kenya</option>
+                                  <option value="saab">Canada</option>
+                                  <option value="opel">Australia</option>
+                                  <option value="audi">Brajil</option>
+                                </select>
+                               <!--  <input type="Last_Name" class="form-control" name="Last-Name" placeholder="Last Name" > -->
+                            </div>
+                            
+                            <div class="form-group ">
+                                <input type="password" class="form-control" name="password" placeholder="Password">
+                            </div>
+                            <div class="form-group ">
+                                <input type="password" class="form-control" name="password-confirmation" placeholder="password-Confirmation">
+                            </div>
+                             <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> I agree to the Terms and Conditions.
+                                </label>
+
+                            </div>
+                            <div>
+                                <input type="submit" class="btnbt" value="Registration">
+                            </div>
+
+                            <p class="p-1">Allraedy Registered? 
+                                    <a href="/">
+                                    <strong> Login</strong>
+                                    </a>
+                            </p>
+                        </form>
+                </div>
+            </div>
+        </div>
+
+
+</body>
+</html>

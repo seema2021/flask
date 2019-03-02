@@ -1,0 +1,96 @@
+<html>
+<head>
+<title>MbeguChoice</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+<link rel="stylesheet" href="static/css/style.css">
+<link rel="stylesheet" href="static/css/tableresult.css">
+
+<link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+<style>
+header{
+   
+    background-image: url(static/BlackEyedPeas.jpeg);
+}
+.questionsbg{
+        background-image: url(static/rajma.jpg);
+
+}
+</style>
+</head>
+<body>
+<header>
+    <div class="headerlg">
+        
+    	<a href="">
+            <img class="wh" src="static/images/logo.png"  alt="MbeguChoice" border="0" />
+        </a>
+        <a href="/country" class="btn btn-info btn-lg">
+          <span class="glyphicon glyphicon-log-out"></span>Home
+        </a>
+    </div>
+
+</header>
+
+<div class="questionsbg">
+<div class="orangeoverlay">
+<div class="tbl">
+
+<h3 class="fsd">Seed Varieties</h3>
+<table class="imtable">
+<tr class="sec-cell">
+<th>Crop</th>
+<th>Variety Name</th>
+<th>Average Yield</th>
+<th>Special Attributes</th>
+<th>View Details</th>
+</tr>
+{% for crop in data %}
+<tr>
+<td>{{ crop.crop }}</td>
+<td>{{ crop.variety_name }}</td>
+<td>{{ crop.average_yield }}</td>
+<td>{{ crop.special_attributes }}
+</td>
+<td>
+<!--<a href="/variety/{{ crop.variety_name }}" class="w3-button w3-grey w3-round-large">click here</a>-->
+<a class="w3-button w3-grey w3-round-large"  onclick="varietyName('{{ crop.variety_name }}')">View</a></td>
+</tr>
+{%  endfor %}
+
+</table>
+</div>
+</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+function varietyName(variety){
+    
+
+    $.ajax({
+          url: 'variety', //server url
+          type: 'POST',    //passing data as post method
+          dataType: 'json', // returning data as json
+          data: {variety:variety},  //form values
+          success:function(response)
+          {
+                //response from the server given as alert message
+            
+            
+           
+            window.location.href="/varietydetail"
+              
+          },
+          error:function(response){
+            alert("error")
+            console.log(response)
+          }
+          });
+  }
+    
+
+</script>
+</body>
+</html>

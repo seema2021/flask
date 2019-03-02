@@ -1,0 +1,21 @@
+{
+    "mysql":{
+        "host":"localhost",
+        "user":"root",
+        "passwd":"",
+        "db":"test"
+    },
+    "api":{
+        "GOOGLE_GEOCODE_API_KEY" : "AIzaSyAgg9zZG2mXS6QzgsM3wUbLIljdU6RBmRw"
+
+    },
+    "mail":{
+        "server":"smtp.gmail.com",
+        "port":465,
+        "user":"ishendrapratap2@gmail.com",
+        "password":"striker@12345",
+        "tls":"False",
+        "ssl":"True"
+
+    }
+}

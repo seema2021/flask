@@ -1,0 +1,89 @@
+.form-control {
+    margin: 10px 0px 0px 13px;
+    height: 35px;
+    display: block;
+    width: 308px;
+    color: #8a8e92;
+    background-color: #fff;
+    border: 1px solid #cccaca;
+    border-radius: 0.25rem;
+}
+input.form-control {
+    padding: 4px 10px;
+}
+
+form.omb_loginForm {
+    line-height: 50px;
+}
+
+.nm {
+    height: auto;
+    background-image: url(static/Painted_Pony_Bean.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+@media only screen and (max-device-width: 400px) {
+.box {
+        
+    
+    border: 1px solid #ddd;
+    width: 100%;
+    border: 5px solid #128bc6;
+    margin: auto;
+}
+}
+input.btnbt {
+    clear: both;
+    background: #3b9143;
+    width: 93%;
+    padding: 12px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0px 2px;
+}
+    .checkbox {
+    text-align: left;
+}
+h3.text-primary {
+    color: #875321;
+}
+p.p-1 {
+    color: grey;
+    font-size: 14px;
+}
+.bg-light.animation.flipInX {
+    margin-bottom: 9%;
+}
+a#forgot_pwd_title {
+    font-size: 15px;
+    color: #875321;
+    font-weight: 500;
+}
+.box {
+    background: #e6d6bced;
+    width: 355px;
+    border: 2px solid #1c1220;
+    margin: auto;
+}
+.box1 {
+    text-align: center;
+}
+select.form-control {
+    padding: 6px;
+    width: 93%;
+}
+img.img-fluid.mar {
+    height: 152px;
+}
+@media (max-width: 992px){
+.nm {
+    padding-top: 0%;
+     height: auto;
+}
+}
